@@ -26,6 +26,11 @@ class SimpleRPC(APIResource):
         request.setResponseCode(200)
         return "request from ip %s" % ip
 
+    @GET('^/getfishLocation')
+    def GET_localtion(self,request):
+#dsfsdfdsfds
+        return "a lot of data"
+
     @ALL('^/')
     def default(self, request):
         self.preprocess(request)
